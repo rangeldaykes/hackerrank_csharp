@@ -1,21 +1,19 @@
 using System;
 using System.Linq;
 
-namespace AllTest
+namespace Algorithms
 {
     public class simpleArraySum
     {
-        public void simpleArraySum_solution1()
+        public int simpleArraySum_solution1(int[] ar)
         {
-            var ar = new int[] { 1, 3, 5, 7, 9 };
-
             var sum = 0;
             for (int i = 0; i < ar.Length; i++)
             {
                 sum += ar[i];
             }
             
-            System.Console.WriteLine(sum);
+            return sum;
         }
     }
 }

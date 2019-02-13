@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace AllTest
+namespace Algorithms
 {
     public class aVeryBigSum
     {

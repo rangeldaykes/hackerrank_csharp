@@ -1,23 +1,22 @@
 using System;
 using System.Linq;
 
-namespace AllTest
+namespace Algorithms
 {
     public class miniMaxSum
     {
-        public void miniMaxSum_solution1()
+        public string miniMaxSum_solution1(long[] ar)
         {
-            var arr = new long[] { 1, 3, 5, 7, 9 };
-
-            Array.Sort(arr);
+            Array.Sort(ar);
             long min = 0, max = 0;
             for (int i = 0; i < 4; i++)
             {
-                min += arr[i];
-                max += arr[i + 1];
+                min += ar[i];
+                max += ar[i + 1];
             }
 
-            Console.WriteLine(min.ToString() + " " + max.ToString());
+            //Console.WriteLine(min.ToString() + " " + max.ToString());
+            return min.ToString() + "  " + max.ToString();
         }
 
         public void miniMaxSum_solution2()
